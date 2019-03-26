@@ -3,7 +3,7 @@ package ar.edu.utn.inicial;
 public class TestSwitchCase {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		// Prueba de Switch
 		char color='M';
 	    switch (color) {
 	    case 'R': 
