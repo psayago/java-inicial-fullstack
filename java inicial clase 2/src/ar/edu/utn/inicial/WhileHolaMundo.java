@@ -1,10 +1,13 @@
 package ar.edu.utn.inicial;
-
 import java.util.Scanner;
 
 import java.util.Scanner;
 
 public class WhileHolaMundo {
+	private static Scanner scan2;
+
+	
+	
 
 	public static void main(String[] args) {
 						
@@ -13,7 +16,7 @@ public class WhileHolaMundo {
 		int ingresoUsuario = scan.nextInt();
 		
 		System.out.print("Ingrese su nombre: ");
-		Scanner scan2 = new Scanner(System.in);
+		scan2 = new Scanner(System.in);
 		String palabra = scan2.nextLine();
 		
 		int contador=0;		 
