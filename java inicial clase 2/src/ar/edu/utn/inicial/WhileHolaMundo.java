@@ -1,13 +1,30 @@
 package ar.edu.utn.inicial;
 
+import java.util.Scanner;
+
+import java.util.Scanner;
+
 public class WhileHolaMundo {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int i=0;
-		while (i!=22) {
-				System.out.println("Hola Mundo");	
-				i++;
-			}
-		}	
+						
+		System.out.print("Ingrese un numero: ");
+		Scanner scan = new Scanner(System.in);
+		int ingresoUsuario = scan.nextInt();
+		
+		System.out.print("Ingrese su nombre: ");
+		Scanner scan2 = new Scanner(System.in);
+		String palabra = scan2.nextLine();
+		
+		int contador=0;		 
+		while (ingresoUsuario != 0) {
+			System.out.println("Hola " + palabra + " es la iteracion nro: " + (contador+1));
+			contador++;
+			System.out.print("Ingrese un numero: ");
+			ingresoUsuario = scan.nextInt();
+		}
+		System.out.println("Cantidad de iteraciones : " + contador);
+		
+	}	
+	
 }
